@@ -1,0 +1,130 @@
+ruby-sqlite
+-------------------------------------------
+This module allows Ruby programs to interface with the SQLite database 
+engine (www.sqlite.org). You must have the SQLite engine installed in 
+order to build this module.
+
+Note that this module is NOT compatible with SQLite 3. 
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  libsqlite0-2.8.17-3
+  ruby-1.8.6-1
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.24-2
+  binutils-20060817-1
+  cygport-0.3.1-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  ruby-1.8.6-1
+
+Canonical homepage:
+  http://sqlite-ruby.rubyforge.org/
+
+Canonical download:
+  http://rubyforge.org/frs/?group_id=254
+
+-------------------------------------------
+
+Build instructions:
+  unpack ruby-sqlite-2.2.3-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ruby-sqlite-2.2.3-1.cygport all
+
+This will create:
+  /usr/src/ruby-sqlite-2.2.3-1-src.tar.bz2
+  /usr/src/ruby-sqlite-2.2.3-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/ruby/site_ruby/1.8/i386-cygwin/sqlite_api.so
+  /usr/lib/ruby/site_ruby/1.8/sqlite/database.rb
+  /usr/lib/ruby/site_ruby/1.8/sqlite/parsed_statement.rb
+  /usr/lib/ruby/site_ruby/1.8/sqlite/pragmas.rb
+  /usr/lib/ruby/site_ruby/1.8/sqlite/resultset.rb
+  /usr/lib/ruby/site_ruby/1.8/sqlite/statement.rb
+  /usr/lib/ruby/site_ruby/1.8/sqlite/translator.rb
+  /usr/lib/ruby/site_ruby/1.8/sqlite/version.rb
+  /usr/lib/ruby/site_ruby/1.8/sqlite.rb
+  /usr/share/doc/Cygwin/ruby-sqlite-2.2.3.README
+  /usr/share/doc/ruby-sqlite-2.2.3/api/blank.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/API.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Database/FunctionProxy.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Database.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/AbortException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/AuthorizationException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/BusyException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/CantOpenException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/ConstraintException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/CorruptException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/DatabaseException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/EmptyException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/FormatException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/FullException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/InternalException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/InterruptException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/IOErrorException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/LockedException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/MismatchException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/MisuseException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/NotADatabaseException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/NotFoundException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/OutOfMemoryException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/PermissionsException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/ProtocolException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/RangeException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/ReadOnlyException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/SchemaChangedException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/SQLException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/TooBigException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions/UnsupportedOSFeatureException.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Exceptions.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/ParsedStatement.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Pragmas.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/ResultSet/FieldsContainer.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/ResultSet/TypesContainer.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/ResultSet.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Statement.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Translator.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite/Version.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/classes/SQLite.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/created.rid
+  /usr/share/doc/ruby-sqlite-2.2.3/api/files/ext/sqlite-api_c.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/files/lib/sqlite/database_rb.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/files/lib/sqlite/parsed_statement_rb.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/files/lib/sqlite/pragmas_rb.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/files/lib/sqlite/resultset_rb.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/files/lib/sqlite/statement_rb.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/files/lib/sqlite/translator_rb.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/files/lib/sqlite/version_rb.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/files/lib/sqlite_rb.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/files/README.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/fr_class_index.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/fr_file_index.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/fr_method_index.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/index.html
+  /usr/share/doc/ruby-sqlite-2.2.3/api/rdoc-style.css
+  /usr/share/doc/ruby-sqlite-2.2.3/ChangeLog
+  /usr/share/doc/ruby-sqlite-2.2.3/faq.html
+  /usr/share/doc/ruby-sqlite-2.2.3/LICENSE
+  /usr/share/doc/ruby-sqlite-2.2.3/TODO
+
+------------------
+
+Port Notes:
+
+----- version 2.2.3-1 -----
+Version bump.
+
+----- version 2.2.2-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by: Yaakov Selkowitz 
+http://cygwin-ports.sourceforge.net/

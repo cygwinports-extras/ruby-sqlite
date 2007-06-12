@@ -1,0 +1,25 @@
+inherit ruby
+
+DESCRIPTION="Ruby SQLite 2.x bindings"
+HOMEPAGE="http://sqlite-ruby.rubyforge.org/"
+SRC_URI="mirror://rubyforge/sqlite-ruby/sqlite-ruby-${PV}.tar.bz2"
+SRC_DIR="sqlite-ruby-${PV}"
+
+src_compile() {
+	lndirs
+	cd ${B}/ext
+	ruby_compile
+}
+
+src_install() {
+	cd ${B}/ext
+	ruby_install
+
+	cd ${B}
+	cp -Lr lib/* ${D}${RUBY_SITELIB}
+
+	docinto html
+	dodoc doc/faq/faq.html
+
+	cp -r ${S}/api ${D}/usr/share/doc/${P}/rdoc
+}

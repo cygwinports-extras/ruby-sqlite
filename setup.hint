@@ -1,0 +1,8 @@
+category: Ruby Database
+requires: cygwin libsqlite0 ruby
+sdesc: "Ruby bindings for sqlite-2.8"
+ldesc: "This module allows Ruby programs to interface with the SQLite 
+database engine (www.sqlite.org). You must have the SQLite engine 
+installed in order to build this module.
+
+Note that this module is NOT compatible with SQLite 3."
